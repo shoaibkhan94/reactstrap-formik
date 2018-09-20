@@ -1,7 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import 'bootstrap/dist/css/bootstrap.min.css'
+import ReactstrapInput from './components/ReactstrapFormikInput';
+import ReactstrapRadio from './components/ReactstrapRadioInput';
+import ReactstrapSelect from './components/ReactstrapSelectInput';
 
-ReactDOM.render(<App/>, document.getElementById('root'));
+
+export {ReactstrapInput, ReactstrapRadio, ReactstrapSelect};
