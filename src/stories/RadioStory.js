@@ -44,7 +44,6 @@ export default () => (
                         <Col xs="12">
                             <button
                                 type="submit"
-                                onClick={submitForm}
                             >
                                 Submit
                             </button>
