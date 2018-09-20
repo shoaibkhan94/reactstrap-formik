@@ -4,18 +4,7 @@
   "dependencies": {
     "bootstrap": "^4.1.3",
     "formik": "^1.3.0",
-    "react": "^16.5.2",
-    "react-scripts": "1.1.5",
     "reactstrap": "^6.4.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -c .storybook -o .out",
-    "deploy-storybook": "storybook-to-ghpages"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.4.11",
@@ -23,8 +12,25 @@
     "@storybook/addons": "^3.4.11",
     "@storybook/react": "^3.4.11",
     "@storybook/storybook-deployer": "^2.3.0",
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
-    "babel-runtime": "^6.26.0"
+    "babel-runtime": "^6.26.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-scripts": "1.1.5"
+  },
+  "peerDependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "rm -rf dist && NODE_ENV=production babel src/components --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 9009 -s .out",
+    "build-storybook": "build-storybook -c .storybook -o .out",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "author": "Shoaib Khan <shoaibkhan1994@gmail.com",
   "repository": {
@@ -38,5 +44,8 @@
     "bootstrap",
     "reactstrap"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [ "dist", "README.md" ]
 }
