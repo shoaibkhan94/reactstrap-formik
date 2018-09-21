@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {FormGroup, Input, Label} from "reactstrap";
 
-let handleBlur = event => {
+/*let handleBlur = event => {
     if (this.ignoreNextBlur === true) {
         // The parent components are relying on the bubbling of the event.
         event.stopPropagation();
@@ -9,7 +9,7 @@ let handleBlur = event => {
         event.target.name = this.props.name;
         return;
     }
-};
+};*/
 
 const ReactstrapSelectInput = ({
                                    field,
@@ -23,7 +23,7 @@ const ReactstrapSelectInput = ({
         <FormGroup>
             <Label for={field.name} className={"label-color"}>{props.inputprops.label}</Label>
             <Input {...field} {...props} type="select" invalid={Boolean(touched[field.name] && errors[field.name])}
-                   onBlur={handleBlur()} placeholder="Test">
+                   placeholder="Test">
                 <option value="">{props.inputprops.label}</option>
                 {props.inputprops.options.map((option, index) => {
                     if (option.name)
