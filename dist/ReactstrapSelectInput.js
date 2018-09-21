@@ -1,19 +1,17 @@
-var _this = this;
-
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
 import * as React from 'react';
 import { FormGroup, Input, Label } from "reactstrap";
 
-var handleBlur = function handleBlur(event) {
-    if (_this.ignoreNextBlur === true) {
+/*let handleBlur = event => {
+    if (this.ignoreNextBlur === true) {
         // The parent components are relying on the bubbling of the event.
         event.stopPropagation();
-        _this.ignoreNextBlur = false;
-        event.target.name = _this.props.name;
+        this.ignoreNextBlur = false;
+        event.target.name = this.props.name;
         return;
     }
-};
+};*/
 
 var ReactstrapSelectInput = function ReactstrapSelectInput(_ref) {
     var field = _ref.field,
@@ -38,7 +36,7 @@ var ReactstrapSelectInput = function ReactstrapSelectInput(_ref) {
         React.createElement(
             Input,
             Object.assign({}, field, props, { type: "select", invalid: Boolean(touched[field.name] && errors[field.name]),
-                onBlur: handleBlur(), placeholder: "Test" }),
+                placeholder: "Test" }),
             React.createElement(
                 "option",
                 { value: "" },
