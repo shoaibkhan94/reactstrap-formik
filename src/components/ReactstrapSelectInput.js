@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {FormGroup, Input, Label} from "reactstrap";
+import {FormFeedback, FormGroup, Input, Label} from "reactstrap";
 
 /*let handleBlur = event => {
     if (this.ignoreNextBlur === true) {
@@ -31,7 +31,7 @@ const ReactstrapSelectInput = ({
                     return (<option value={option} key={index}>{option}</option>)
                 })}
             </Input>
-            {touch && error && <p>{error}</p>}
+            {touch && error && <FormFeedback>{error}</FormFeedback>}
         </FormGroup>
     )
 };
