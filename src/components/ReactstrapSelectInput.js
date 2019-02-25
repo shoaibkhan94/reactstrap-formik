@@ -21,10 +21,10 @@ const ReactstrapSelectInput = ({
     let touch = touched[field.name];
     return (
         <FormGroup>
-            <Label for={field.name} className={"label-color"}>{props.inputprops.label}</Label>
+            <Label for={field.name} className={"label-color"}>{props.label}</Label>
             <Input {...field} {...props} type="select" invalid={Boolean(touched[field.name] && errors[field.name])}
                    placeholder="Test">
-                <option value="">{props.inputprops.label}</option>
+                <option value="">{props.inputprops.defaultOption}</option>
                 {props.inputprops.options.map((option, index) => {
                     if (option.name)
                         return (<option value={option.id} key={index}>{option.name}</option>);

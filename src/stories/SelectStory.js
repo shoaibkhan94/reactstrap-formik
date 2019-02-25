@@ -38,7 +38,7 @@ export default () => (
                                     name: 'country',
                                     id: 'country',
                                     options: ['India', 'USA', 'UK', 'Saudi Arabia'],
-                                    label: "Country"
+                                    defaultOption: "Country"
                                 }}>
                             </Field>
                         </Col>
@@ -51,7 +51,7 @@ export default () => (
                                     name: 'country',
                                     id: 'country',
                                     options: ['India', 'USA', 'UK', 'Saudi Arabia'],
-                                    label: "Country"
+                                    defaultOption: "Country"
                                 }}>
                             </Field>
                         </Col>
