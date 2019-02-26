@@ -48,8 +48,8 @@ export default () => (
                                 name="prefilled_country"
                                 component={SelectInput}
                                 inputprops={{
-                                    name: 'country',
-                                    id: 'country',
+                                    name: 'prefilled_country',
+                                    id: 'prefilled_country',
                                     options: ['India', 'USA', 'UK', 'Saudi Arabia'],
                                     defaultOption: "Country"
                                 }}>

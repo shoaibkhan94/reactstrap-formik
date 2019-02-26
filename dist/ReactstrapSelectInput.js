@@ -38,12 +38,13 @@ var ReactstrapSelectInput = function ReactstrapSelectInput(_ref) {
         null,
         React.createElement(
             Label,
-            { "for": field.name, className: "label-color" },
+            {"for": props.inputprops.id, className: "label-color"},
             props.label
         ),
         React.createElement(
             Input,
-            Object.assign({}, field, props, { type: "select", invalid: Boolean(touched[field.name] && errors[field.name]),
+            Object.assign({id: props.inputprops.id}, field, props, {
+                type: "select", invalid: Boolean(touched[field.name] && errors[field.name]),
                 placeholder: "Test" }),
             React.createElement(
                 "option",

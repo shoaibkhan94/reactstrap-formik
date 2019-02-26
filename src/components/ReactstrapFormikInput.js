@@ -8,7 +8,7 @@ const ReactstarpFormikInput = (
         ...props
     }) => (
     <FormGroup>
-        <Label for={fields.name} className={"label-color"}>{props.label}</Label>
+        <Label for={props.id} className={"label-color"}>{props.label}</Label>
         <Input {...props} {...fields} invalid={Boolean(touched[fields.name] && errors[fields.name])}/>
         {touched[fields.name] && errors[fields.name] ? <FormFeedback>{errors[fields.name]}</FormFeedback> : ''}
     </FormGroup>

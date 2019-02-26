@@ -39,6 +39,7 @@ export default () => (
                                 label="Email"
                                 name="email"
                                 component={TextField}
+                                id="email"
                             />
                         </Col>
                         <Col xs="12">
@@ -47,6 +48,7 @@ export default () => (
                                 label="Password"
                                 name="password"
                                 component={TextField}
+                                id="password"
                             />
                         </Col>
                         <Col xs="12">
