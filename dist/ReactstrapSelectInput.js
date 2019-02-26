@@ -44,7 +44,8 @@ var ReactstrapSelectInput = function ReactstrapSelectInput(_ref) {
         React.createElement(
             Input,
             Object.assign({id: props.inputprops.id}, field, props, {
-                type: "select", invalid: Boolean(touched[field.name] && errors[field.name]),
+                type: "select",
+                invalid: Boolean(touched[field.name] && errors[field.name]),
                 placeholder: "Test" }),
             React.createElement(
                 "option",
