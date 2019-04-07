@@ -9,8 +9,8 @@ const ReactstrapRadioInput = ({
                               }) => {
     return (
         <FormGroup check inline>
-            <Label for="inp">
-                <Input type="radio" name={field.name} checked={values[field.name] === field.value} value={field.value}
+            <Label for={props.id}>
+                <Input {...props} type="radio" name={field.name} checked={values[field.name] === field.value} value={field.value}
                        onChange={(event, value) => setFieldValue(field.name, field.value)}/>{props.label}
             </Label>
         </FormGroup>
