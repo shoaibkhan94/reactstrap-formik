@@ -1,15 +1,7 @@
-function _objectWithoutProperties(obj, keys) {
-    var target = {};
-    for (var i in obj) {
-        if (keys.indexOf(i) >= 0) continue;
-        if (!Object.prototype.hasOwnProperty.call(obj, i)) continue;
-        target[i] = obj[i];
-    }
-    return target;
-}
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
 import * as React from 'react';
-import {FormFeedback, FormGroup, Input, Label} from "reactstrap";
+import { FormFeedback, FormGroup, Input, Label } from "reactstrap";
 
 /*let handleBlur = event => {
     if (this.ignoreNextBlur === true) {
@@ -38,13 +30,12 @@ var ReactstrapSelectInput = function ReactstrapSelectInput(_ref) {
         null,
         React.createElement(
             Label,
-            {"for": props.inputprops.id, className: "label-color"},
+            { "for": props.inputprops.id, className: "label-color" },
             props.label
         ),
         React.createElement(
             Input,
-            Object.assign({id: props.inputprops.id}, field, props, {
-                type: "select",
+            Object.assign({ id: props.inputprops.id }, field, props, { type: "select",
                 invalid: Boolean(touched[field.name] && errors[field.name]),
                 placeholder: "Test" }),
             React.createElement(

@@ -47,5 +47,8 @@
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.js",
-  "files": [ "dist", "README.md" ]
+  "files": [
+    "dist",
+    "README.md"
+  ]
 }

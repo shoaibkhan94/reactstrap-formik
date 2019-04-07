@@ -20,11 +20,11 @@ var ReactstrapRadioInput = function ReactstrapRadioInput(_ref) {
         { check: true, inline: true },
         React.createElement(
             Label,
-            { "for": "inp" },
-            React.createElement(Input, { type: "radio", name: field.name, checked: values[field.name] === field.value, value: field.value,
+            { "for": props.id },
+            React.createElement(Input, Object.assign({}, props, { type: "radio", name: field.name, checked: values[field.name] === field.value, value: field.value,
                 onChange: function onChange(event, value) {
                     return setFieldValue(field.name, field.value);
-                } }),
+                } })),
             props.label
         )
     );
