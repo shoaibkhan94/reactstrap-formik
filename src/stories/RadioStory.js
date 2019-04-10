@@ -32,10 +32,10 @@ export default () => (
                         <Col xs="12">
                             <legend className="col-form-label col-sm-2">Available</legend>
                             <Col sm={10}>
-                                <Field name="available" component={RadioInput} value="true" type="radio"
+                                <Field id="isAvailable" name="available" component={RadioInput} value="true" type="radio"
                                        label="True">
                                 </Field>
-                                <Field name="available" component={RadioInput} value="false"
+                                <Field id="isNotAvailable" name="available" component={RadioInput} value="false"
                                        type="radio"
                                        label="False">
                                 </Field>
