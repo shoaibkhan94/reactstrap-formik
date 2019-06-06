@@ -52,6 +52,14 @@ export default () => (
                             />
                         </Col>
                         <Col xs="12">
+                            <Field
+                                type="text"
+                                name="no_label_text"
+                                component={TextField}
+                                id="no_label_text"
+                            />
+                        </Col>
+                        <Col xs="12">
                             <button
                                 type="submit"
                             >

@@ -25,14 +25,15 @@ var ReactstrapSelectInput = function ReactstrapSelectInput(_ref) {
 
     var error = errors[field.name];
     var touch = touched[field.name];
+    var label = props.label ? React.createElement(
+        Label,
+        { "for": props.inputprops.id, className: "label-color" },
+        props.label
+    ) : null;
     return React.createElement(
         FormGroup,
         null,
-        React.createElement(
-            Label,
-            { "for": props.inputprops.id, className: "label-color" },
-            props.label
-        ),
+        label,
         React.createElement(
             Input,
             Object.assign({ id: props.inputprops.id }, field, props, { type: "select",
