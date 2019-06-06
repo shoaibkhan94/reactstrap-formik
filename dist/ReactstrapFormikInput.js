@@ -14,11 +14,11 @@ var ReactstarpFormikInput = function ReactstarpFormikInput(_ref) {
     return React.createElement(
         FormGroup,
         null,
-        React.createElement(
+        props.label ? React.createElement(
             Label,
             { "for": props.id, className: "label-color" },
             props.label
-        ),
+        ) : null,
         React.createElement(Input, Object.assign({}, props, fields, { invalid: Boolean(touched[fields.name] && errors[fields.name]) })),
         touched[fields.name] && errors[fields.name] ? React.createElement(
             FormFeedback,

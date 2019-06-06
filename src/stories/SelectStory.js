@@ -56,6 +56,18 @@ export default () => (
                             </Field>
                         </Col>
                         <Col xs="12">
+                            <Field
+                                name="no_label_country"
+                                component={SelectInput}
+                                inputprops={{
+                                    name: 'no_label_country',
+                                    id: 'no_label_country',
+                                    options: ['India', 'USA', 'UK', 'Saudi Arabia'],
+                                    defaultOption: "Country"
+                                }}>
+                            </Field>
+                        </Col>
+                        <Col xs="12">
                             <button
                                 type="submit"
                             >
