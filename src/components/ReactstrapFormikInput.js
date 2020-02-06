@@ -1,7 +1,7 @@
 import React from 'react';
 import {FormFeedback, FormGroup, Input, Label} from "reactstrap";
 
-const ReactstarpFormikInput = (
+const ReactstrapFormikInput = (
     {
         field: {...fields},
         form: {touched, errors, ...rest},
@@ -13,4 +13,4 @@ const ReactstarpFormikInput = (
         {touched[fields.name] && errors[fields.name] ? <FormFeedback>{errors[fields.name]}</FormFeedback> : ''}
     </FormGroup>
 );
-export default ReactstarpFormikInput;
+export default ReactstrapFormikInput;
