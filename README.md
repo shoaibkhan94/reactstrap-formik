@@ -3,7 +3,7 @@ Bindings for using [Formik](https://github.com/jaredpalmer/formik) with [Reactst
 
 ## Getting Started
 
-    npm install reactstrap-formik
+    npm install reactstrap-formik-2
     
 ## Usage Examples
   * Text Input [Example](https://codesandbox.io/s/xl6mx6w8z4)
