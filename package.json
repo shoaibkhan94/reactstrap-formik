@@ -17,7 +17,7 @@
     "babel-runtime": "^6.26.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "react-scripts": "1.1.5"
+    "react-scripts": "5.0.1"
   },
   "peerDependencies": {
     "react": "^16.5.2",
